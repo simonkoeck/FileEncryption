@@ -34,7 +34,7 @@ class Encryptor:
         randomname2 = self.randomstring(key_length)
         randomname3 = self.randomstring(key_length)
 
-        imports += "# PythonFileEncryptor 0.1.3"
+        imports += "# PythonFileEncryptor 0.1 \n"
         imports += "# https://pypi.org/project/PythonFileEncryption/"
         imports += "\n"
         imports += "from base64 import b64decode as {}\n".format(randomname)
