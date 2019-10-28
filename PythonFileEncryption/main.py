@@ -34,8 +34,8 @@ class Encryptor:
         randomname2 = self.randomstring(key_length)
         randomname3 = self.randomstring(key_length)
 
-        imports += "# ENCRYPTOR 0.1"
-        imports += "# Simon Köck 2019"
+        imports += "# PythonFileEncryptor 0.1.3"
+        imports += "# https://pypi.org/project/PythonFileEncryption/"
         imports += "\n"
         imports += "from base64 import b64decode as {}\n".format(randomname)
         imports += "from cryptography.fernet import Fernet as {}\n".format(randomname1)
@@ -47,6 +47,6 @@ class Encryptor:
 
         filedata += 'exec({}.decrypt({}({})))'.format(randomname2, randomname, base64.b64encode(f.encrypt(data.encode())))
 
-        f = open(ouput_path, "w+")
+        f = open(ouput_path, "w")
         f.write(filedata)
         f.close()
