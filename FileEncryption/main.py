@@ -23,7 +23,7 @@ class Encryptor:
             raise Exception(e)
 
         for line in lines:
-            if (line.startswith("import") or line.startswith("from")) and include_imports:
+            if (line.startswith("import") or line.startswith("from")) and not include_imports:
                imports += line
             else:
                 if not line.startswith("#") and not line.startswith("\n"):
@@ -34,7 +34,7 @@ class Encryptor:
         randomname2 = self.randomstring(key_length)
         randomname3 = self.randomstring(key_length)
 
-        imports += "# PythonFileEncryptor 0.1 \n"
+        imports += "# FileEncryptor 0.1.1 \n"
         imports += "# https://pypi.org/project/PythonFileEncryption/"
         imports += "\n"
         imports += "from base64 import b64decode as {}\n".format(randomname)
