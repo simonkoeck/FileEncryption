@@ -11,13 +11,14 @@ To download FileEncryption, either fork this github repo or simply use Pypi via 
 $ pip install FileEncryption
 ```
 
-### Using
+#### Using
 
 ```Python
 from FileEncryption import Encryptor
+```
 
-encryptor = Encryptor() # Create a new instace of the Encryptor-Class
+#### Initialize the Encryptor Class
 
-encryptor.encrypt(path="../input_file.py", ouput_path="./output.py")
-
+```Python
+encryptor = Encryptor() # Saving the instance in the encryptor variable
 ```
