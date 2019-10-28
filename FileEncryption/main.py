@@ -13,6 +13,8 @@ class Encryptor:
         if(not path.endswith(".py") and not path.endswith(".pyw")):
             raise Exception("{} is no .py or .pyw File!".format(path))
         imports = ""
+        imports += "# FileEncryptor 0.1.3 \n"
+        imports += "# https://pypi.org/project/FileEncryption/"
         data = ""
         key = Fernet.generate_key()
         try:
@@ -21,7 +23,6 @@ class Encryptor:
             f.close()
         except Exception as e:
             raise Exception(e)
-
         for line in lines:
             if (line.startswith("import") or line.startswith("from")) and not include_imports:
                imports += line
@@ -34,8 +35,6 @@ class Encryptor:
         randomname2 = self.randomstring(key_length)
         randomname3 = self.randomstring(key_length)
 
-        imports += "# FileEncryptor 0.1.2 \n"
-        imports += "# https://pypi.org/project/PythonFileEncryption/"
         imports += "\n"
         imports += "from base64 import b64decode as {}\n".format(randomname)
         imports += "from cryptography.fernet import Fernet as {}\n".format(randomname1)

@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'FileEncryption',
   packages = ['FileEncryption'],
-  version = '0.1.2',
+  version = '0.1.3',
   license='MIT',
   description = 'Encrypt you .py or .pyw files to unreadable code', 
   author = 'Simon Köck',
