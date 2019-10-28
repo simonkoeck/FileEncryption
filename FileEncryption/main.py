@@ -13,8 +13,8 @@ class Encryptor:
         if(not path.endswith(".py") and not path.endswith(".pyw")):
             raise Exception("{} is no .py or .pyw File!".format(path))
         imports = ""
-        imports += "# FileEncryptor 0.1.3 \n"
-        imports += "# https://pypi.org/project/FileEncryption/"
+        imports += "# FileEncryptor 0.1.4 \n"
+        imports += "# https://pypi.org/project/FileEncryption/ \n"
         data = ""
         key = Fernet.generate_key()
         try:
