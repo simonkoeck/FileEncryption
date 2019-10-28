@@ -10,7 +10,7 @@ class Encryptor:
         return ''.join(random.choice(letters) for i in range(stringLength))
 
     def encrypt(self, path, ouput_path, include_imports=False, key_length=10):
-        if(path.endswith(".py") and path.endswith(".pyw")):
+        if(not path.endswith(".py") and not path.endswith(".pyw")):
             raise Exception("{} is no .py or .pyw File!".format(path))
         imports = ""
         data = ""
