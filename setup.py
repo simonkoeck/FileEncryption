@@ -11,7 +11,6 @@ setup(
   download_url = 'https://github.com/simonkoeck/PythonFileEncryption/archive/v_01.tar.gz',
   keywords = ['File', 'Encryption', 'Unreadable'],
   install_requires=[
-          'base64',
           'cryptography',
       ],
   classifiers=[
