@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+FileEncryption/__init__.py
+FileEncryption/main.py
+FileEncryption.egg-info/PKG-INFO
+FileEncryption.egg-info/SOURCES.txt
+FileEncryption.egg-info/dependency_links.txt
+FileEncryption.egg-info/requires.txt
+FileEncryption.egg-info/top_level.txt

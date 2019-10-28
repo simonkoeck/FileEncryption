@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: FileEncryption
+Version: 0.1.6
+Summary: Encrypt you .py or .pyw files to unreadable code
+Home-page: https://github.com/simonkoeck/FileEncryption
+Author: Simon Köck
+Author-email: simply.studios.business@gmail.com
+License: MIT
+Download-URL: https://github.com/simonkoeck/FileEncryption/archive/v_01.tar.gz
+Description: # FileEncryption
+        
+        ## Usage
+        
+        In the following paragraphs, I am going to describe how you can get and use FileEncryption for your own projects.
+        
+        ###  Getting it
+        
+        To download FileEncryption, either fork this github repo or simply use Pypi via pip.
+        ```sh
+        $ pip install FileEncryption
+        ```
+        
+        ### Using
+        
+        ```Python
+        from FileEncryption import Encryptor
+        ```
+        
+        ### Initialize the Encryptor Class
+        
+        ```Python
+        encryptor = Encryptor() # Saving the instance in the encryptor variable
+        ```
+        
+        ### Encrypt the Input File
+        
+        ```Python
+        encryptor.encrypt(path="input.py", ouput_path="output.py")
+        ```
+        
+        #### INPUT
+        
+        ```Python
+        import random
+        print(random.randint(10, 20))
+        ```
+        
+        #### OUTPUT
+        
+        ```Python
+        from base64 import b64decode as jbwptnorqx
+        from cryptography.fernet import Fernet as wuktjjutaj
+        eoqszeurnl = b'4lc8q5lMAKWlgswSwTHCircF2VWquMEGQP4B4aJHqbk='
+        bvpbxsamrw = wuktjjutaj(eoqszeurnl)
+        exec(bvpbxsamrw.decrypt(jbwptnorqx(b'Z0FBQUFBQmR0c2I1emNHMTZwTllnNnJHRjR3LW9CUVBXM2k3d2RsN2Q3czRqUEI4UGV5eFpVMWZRQUluVGo5OVZkVjRteHc1dGFqMFRxZDFxa0lNZ2tMa1ZVOUVrRmtrNHZMNWlGQjl0NGQyS3Y1VjNOWGllR2lkNVFRTFEtRC1lZGZ0RFJHOWcxbkY=')))
+        ```
+Keywords: File,Encryption,Unreadable
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
