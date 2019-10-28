@@ -1,14 +1,14 @@
 from distutils.core import setup
 setup(
-  name = 'PythonFileEncryption',
-  packages = ['PythonFileEncryption'],
+  name = 'FileEncryption',
+  packages = ['FileEncryption'],
   version = '0.1',
   license='MIT',
   description = 'Encrypt you .py or .pyw files to unreadable code', 
   author = 'Simon Köck',
   author_email = 'simply.studios.business@gmail.com',
-  url = 'https://github.com/simonkoeck/PythonFileEncryption',
-  download_url = 'https://github.com/simonkoeck/PythonFileEncryption/archive/v_01.tar.gz',
+  url = 'https://github.com/simonkoeck/FileEncryption',
+  download_url = 'https://github.com/simonkoeck/FileEncryption/archive/v_01.tar.gz',
   keywords = ['File', 'Encryption', 'Unreadable'],
   install_requires=[
           'cryptography',
