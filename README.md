@@ -13,32 +13,32 @@ $ pip install FileEncryption
 
 ### Using
 
-```Python
+```python
 from FileEncryption import Encryptor
 ```
 
 ### Initialize the Encryptor Class
 
-```Python
+```python
 encryptor = Encryptor() # Saving the instance in the encryptor variable
 ```
 
 ### Encrypt the Input File
 
-```Python
+```python
 encryptor.encrypt(path="input.py", ouput_path="output.py")
 ```
 
 #### INPUT
 
-```Python
+```python
 import random
 print(random.randint(10, 20))
 ```
 
 #### OUTPUT
 
-```Python
+```python
 from base64 import b64decode as jbwptnorqx
 from cryptography.fernet import Fernet as wuktjjutaj
 eoqszeurnl = b'4lc8q5lMAKWlgswSwTHCircF2VWquMEGQP4B4aJHqbk='
